@@ -22,7 +22,6 @@ public class Servizi {
 	VoceDao voceDao= new VoceDao();
 
 	// 1a registrazione utenti
-	
 	public boolean registraUtente(UtenteBean u) {
 		
 		boolean res = false;
@@ -33,7 +32,6 @@ public class Servizi {
 	}
 
 	// 1b registrazione Clienti
-	
 	public boolean registraCliente(ClienteBean c) {
 		
 		boolean res = false;
@@ -43,7 +41,6 @@ public class Servizi {
 	}
 
 	// 1c registrazione Dipendenti
-	
 	public boolean registraDipendente(DipendenteBean d) {
 		
 		boolean res = false;
@@ -60,14 +57,12 @@ public class Servizi {
 	
 	
 	//2b recupera elenco dipendenti
-	
 	public List<DipendenteBean> getDipendenti(){
 		
 		return dipendenteDao.getTuttiDipendenti();
 	}
 	
 	//3 trova utente con username
-	
 	public UtenteBean getUtente(String username) {
 		
 		UtenteBean utenteBean =utenteDao.trovaUtenteConUsername(username);
@@ -88,7 +83,6 @@ public class Servizi {
 	}
 	
 	// 5 crea rubrica
-	
 	public boolean creaRubrica(String username){
 		
 		Rubrica rubrica= new Rubrica(username);
@@ -97,7 +91,6 @@ public class Servizi {
 	}
 	
 	// 6 aggiungi voce in rubrica
-	
 	public boolean aggiungiVoce(Rubrica rubrica,Voce voce) {
 		
 		boolean res = false;
@@ -124,7 +117,6 @@ public class Servizi {
 	}
 
 	//8 trova elenco voci
-	
 	public List<Voce> getVoci(Rubrica rubrica) {
 		List<Voce> elencoVoci = voceDao.getVociRubrica(rubrica);
 
@@ -162,5 +154,4 @@ public class Servizi {
 				return utenteDao.eliminaUtente(utenteBean);
 			}
 		}
-
 }

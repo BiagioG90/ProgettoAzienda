@@ -12,7 +12,9 @@ public class Rubrica {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id_rubrica;
+	
 	private String nomeRubrica;
+	
 	@OneToMany(mappedBy="rubrica",fetch=FetchType.EAGER,cascade=CascadeType.ALL)
 	@NotFound(action=NotFoundAction.IGNORE)
 	private Set<Voce> elencoVoci = new HashSet<Voce>();
@@ -50,6 +52,5 @@ public class Rubrica {
 
 	public void addVoce(Voce v){
 		this.elencoVoci.add(v);
-}
-
+	}
 }

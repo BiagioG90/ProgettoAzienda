@@ -33,7 +33,6 @@ public class VoceDao {
 		}
 		
 		return res;
-
 	}
 	
 	public Voce trovaVoce(String nome, String cognome, long idRubrica){
@@ -87,8 +86,8 @@ public class VoceDao {
 		return elencoVoci;
 	}
 	
-	public boolean modificaVoce(Voce voce)
-	{
+	public boolean modificaVoce(Voce voce){
+		
 		boolean res = false;
 		Session session =HibernateUtil.openSession();
 		Transaction tx=null;
@@ -110,7 +109,6 @@ public class VoceDao {
 		return res;
 	}
 	
-
 	public boolean eliminaVoce(Voce voce){
 		
 		boolean res = false;

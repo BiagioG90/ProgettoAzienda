@@ -9,6 +9,7 @@ public class Voce implements IsValid {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id_voce;
+	
 	private String nome;
 	private String cognome;
 	private String telefono;
@@ -71,11 +72,10 @@ public class Voce implements IsValid {
 		boolean res = false;
 		
 		if(!nome.isEmpty() && nome!=null && 
-				!cognome.isEmpty() && cognome!=null &&
-				!telefono.isEmpty() && telefono!=null) {
+			!cognome.isEmpty() && cognome!=null &&
+			!telefono.isEmpty() && telefono!=null) {
 			res = true;
 		}
-		
 		return res;
 	}
 }

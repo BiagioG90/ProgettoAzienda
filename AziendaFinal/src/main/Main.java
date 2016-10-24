@@ -14,7 +14,5 @@ public class Main {
 		adminBean.setPassword(serv.codificaPassword("marchisio90"));
 		
 		adminDao.creaAdmin(adminBean);
-
 	}
-
 }

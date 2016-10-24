@@ -58,7 +58,6 @@ public class RubricaDao {
 	}
 
 	//2a trova rubrica con id
-	
 	public Rubrica trovaRubricaConId(long idRubrica){
 		
 		Rubrica r=null;
@@ -103,7 +102,6 @@ public class RubricaDao {
 			session.close();
 		}
 		return r;
-		
 	}
 	
 	//3 modifica rubrica
@@ -127,7 +125,6 @@ public class RubricaDao {
 			session.close();
 		}
 		return res;
-		
 	}
 	
 	//4 elimina Rubrica

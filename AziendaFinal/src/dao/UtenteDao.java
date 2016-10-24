@@ -56,7 +56,6 @@ public class UtenteDao {
 			session.close();
 		}
 		return utenteBean;
-		
 	}
 	
 	public List<UtenteBean> getTuttiUtenti() {
@@ -101,7 +100,6 @@ public class UtenteDao {
 		}
 		
 		return res;
-		
 	}
 	
 	public boolean eliminaUtente(UtenteBean u){

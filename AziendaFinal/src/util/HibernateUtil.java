@@ -15,8 +15,7 @@ import org.hibernate.cfg.Configuration;
 	 throw new ExceptionInInitializerError(ex);
 	 }
 	 }
-
-	public static SessionFactory getSessionFactory() {
+	 public static SessionFactory getSessionFactory() {
 	 return sessionFactory;
 	 }
 
